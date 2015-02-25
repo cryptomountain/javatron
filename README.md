@@ -14,7 +14,7 @@ JavaTron is a Java application that controls a TurtleBeach AudioTron Network MP3
 Use the Setup Program to install
 
 ##### Linux/Mac/Others
-java -jar javatron-2.2.8.jar [audiotron-ip] [username] [password]
+java -jar javatron.jar [audiotron-ip] [username] [password]
 
 ### VERSION INFO
 
@@ -35,6 +35,6 @@ defaults or are uninstalling JavaTron.
 
 ### Building
 
-Javatron is a Netbeans project. It uses the incredibly simple and robust org.desktop framework for dialog building etc. Because of this you need to use a version of Netbeans 7.12 or less. You may need to set some pathing to get it to build and debug in the Netbeans framework. If anyone feels like moving it to an eclipse project, have at it. 
+Javatron is a Netbeans project. It uses the incredibly simple and robust Swing framework for dialog building etc. Because of this you need to use a version of Netbeans 7.12 or less to get dialog builders. You may need to set some pathing to get it to build and debug in the Netbeans framework. If anyone feels like moving it to an eclipse project, have at it. 
 
 

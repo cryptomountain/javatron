@@ -1,3 +1,4 @@
+OBSOLETE
 JavaTron Build Information File
 Version 1.0
 

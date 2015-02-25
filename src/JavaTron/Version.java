@@ -1,5 +1,6 @@
 /* Copyright (C) 2001-2002 Taylor Gautier
- *
+ * Copyright (C) 2010-2015 Joe Culbreth
+ * 
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation; either version 2 of the License, or (at your
@@ -14,7 +15,7 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
- * $Id: Version.java,v 1.4 2002/08/05 20:46:45 tgautier Exp $
+ * $Id: Version.java,v 3.0 2002/08/05 20:46:45 jculbreth Exp $
  */
 
 package JavaTron;
@@ -25,11 +26,13 @@ import java.io.*;
  * Represents all the song information for a song from an the AudioTron.
  *
  * @author Taylor Gautier
- * @version $Revision: 1.4 $
+ * 
+ * @author Joe Culbreth
+ * @version $Revision 3.0 $
  */
 public class Version
 {
-    public static final String version = "2.2.7-05-120JSC";
+    public static final String version = "3.0.0.0";
 
     private static String name = "version";
 
