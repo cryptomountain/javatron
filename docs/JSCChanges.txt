@@ -1,0 +1,137 @@
+Imported as Netbeans Project
+
+Added JavaTron imports from org.jdesktop.application to enable OS look-n-feel
+Added JavaTron extension from SingleFrameApplication
+
+Added AudioTron::B64Encode to replace sun.* Encoding stuff
+Added AudioTron::boolean ShowExtra debug switch
+Added AudioTron::PostCommand to perform POST requests
+Added AudioTron::DELQUE constant and statusMap entry for command reporting
+Added AudioTron::dequeueFile to remove a song from the Active Play Queue
+Added AudioTron::post to perform a POST command request
+Added AudioTron::ADDNEW contant and statusMap entry for apiaddfile.asp
+Added AudioTron::addToLibrary command queuer
+
+
+Added AudioTronState::getInfoFromTitle to get a single Song's information
+	(wrong place for this? its blocking<ugh>)
+Added AudioTronState::InfoParser to parse an apigetinfo file:title response
+
+Added AudioTronPlaylistEditor::boolean showExtra debug switch
+Added AudioTronPlaylistEditor "get info" popup menu to get song info for a
+	selected song.
+Added AudioTronPlaylistEditor::get_info
+Added AudioTronPlaylisteditor::get_song_info
+Added AudioTronPlaylistEditor "Remove Selected" popup menu to remove a single
+	song from the playlist
+Added AudioTronPlalistEditor::remove_selected
+Added AudioTronPlaylistEditor::add_to_library to implement /apiaddfile.asp
+
+Added AudioTronSong::getSongInfo which returns the individual Song information
+	as String[];
+
+Added PageEntry class to handle selection lists for the remove_selected method
+Rewrote AudioTronPlaylistEditor::remove_selected to support multiple selections
+
+Changed AudioTronState::Parser::listDone. Changed the end-of-list check to
+	count < 51 to temporarily fix never ending TitlePane list filler bug.
+
+Added ATNetConfigDlg class for setting the IP address etc.
+Added ATWebDisplayDlg to display raw web outputs
+Added AudioTronSong:: playable implemention (NOT BULLETPROOF!!)
+Added AudoiTronPlaylistEditor::make_into_playlist which copies the current playQ
+	to Playlist1 and writes the list to an m3u playlist file
+Added Songs2M3U class to write the playQ to an m3u file
+Added Configuation::base_m3u_file
+Added Preferences::base_m3u_file
+
+Added Mp3Header class , intended to read mp3 file headers to get the duration of
+	an mp3 file for the extended m3u format (Not implemented)
+
+Added JavaTronParsers Utility class. (Not sure if its going to be any use, but
+	it helps me understand the parsers)
+
+Added Songs2M3U::saveToFile(filename)
+Added FileChooser to create m3u code in AudtronPlaylistEditor
+
+Added code to filter out images and buttons for the web-page display dialog
+
+Added AudioTron::SEARCH contant and statusMap entry for POST to search for new files
+Added Songs2M3U fix to write windows format (which the Audiotron expects)
+Added Search for new songs button to main Window
+
+Added "TV" button to change to BIG fonts for when I've got the playlist editor displaying on my tv.
+AudioTronPlaylistEditor::setTV()
+Added GUIUtilities::setBackground skeleton...not sure if it'll be useful.
+Added Check in AudioTronPlaylistEditor::get_song_info to check for non-playable entries.
+
+Added Thread.sleep to AudioTronState.getShares() so it doesnt' return until the
+  shareList is built, trying a maximum of 10 times. This is part of being able to
+  work with the network shares that the AudioTron is aware of.
+
+Added update code for TV Fonts switching to fix half-button/big combobox bug
+Commented out web page display
+
+Implemented Message Control
+
+Added ATRadioFile class - Works with radio.txt file.
+  - retreives via smb share
+  - parses radio.txt file
+  - add/delete works
+  - builds/outputs radio.txt file to reporter pane
+Added ATBigTextDlg for displaying large amounts of text
+Added ATTestPanel for a quick hook into the UI to test code.
+Added ATRadioDlg as skeleton for the radio editor
+
+Threaded the action for the test panel.
+ATRadioDlg readonly. Convienently lists radio.txt in JTable
+Moved StationEntry class to its own file
+
+Implemented RowDeletion in RadioEditor
+Implemented fileGenerator in RadioEditor
+Implemented backup file in RadioEditor
+Implemented Station Counter in RadioEditor
+
+Implemented Copy Constructor in StationEntry
+
+Implemented radio.txt connection info preferences, they're now saved.
+Implemented "install" feature which will replace the live radio.txt with the edited list
+  writes directly to the smb share.
+We Can now write network files (Yay!)
+
+Fixed nasty bug where network file writes would get truncated on next to last 32K boundry
+Implemented Ability to create a new Radio.txt file from scratch
+Added some error checking to the Radio.txt process
+Added ATTVModeConfigPanel to pick font, font color, font size, backgrounds for TV Mode
+Aded JPop Class, a REALLY simple message box.
+
+Added AudioTronPlaylistEditor::save_m3u method to save a playlist(not the queue) as an m3u
+Added Songs2M3U::makeM3U(ArrayList<AudioTronSong>) to make an m3u from any song list
+
+**NOTE** need to clean up Songs2M3U and the 'save the playqueue' code. There's some
+redundancy between what class does what!!!
+
+Replaced Runner thread with a real inner Thread class in AudioTronPlaylistEditor::get_info.
+FINALLY! It stopped blocking!!!
+Made minor cosmetic changes.
+Added static Color parsers to JavaTronParsers
+
+Added bunches of expected features to Radio List Editor
+	- menuing, button bar, open, save, save as...etc etc.
+Refactored JavaTronParsers to JTP
+
+Attempted fix for 'add-to-playlist #' bug. This one is dug in deep,may end up being a design flaw.
+Disabled adding multiple playlist editors.
+Disabled 'add-to-playlist' popup menu item
+Attempted to straighten out saving playlist to M3U when the playlist is built from the
+	library panels and not the play queue. There's alot going on there I don't get.
+
+Added code to convert IndexedMutableTreeNode to an AudioTronSong, solved problem above
+Re-enabled mulitple playlists(The 'add to playlist' _button_ works)
+
+Fixed the 'add to playlist X' bug. It works....but it really ain't pretty!
+Changed the Action creator to expect a string and not an EditorList object
+Added code in GUIUtitlities to detect 'Add to Playlist XX' click and then inject a
+	string argument.
+
+Fixed the "WindowsMedia" bug in the radio editor

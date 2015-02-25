@@ -1,0 +1,135 @@
+Version 2.2.8
+ + see JSCChanges.txt
+
+Version 2.2.7-04JSC
+ + see JSCChanges.txt
+
+Version 2.2.7-03JSC
+ + see JSCChanges.txt
+
+Version 2.2.7
+ + Fix AudioTronSong class so that if the song title changes it will update (for Net Radio)
+
+Version 2.2.6
+ + Enabled the Net tab
+
+Version 2.2.5
+ + Fixed Timer class (JavaTron doesn't stall after a few days)
+
+Version 2.2.4
+ + Enabled 'List' tab in playlist editor
+
+Version 2.2.3
+ + fixes for AT Firmware 2.5.2 (use 2.2.2 if you have something less)
+ + Update field name CurrTime -> CurrPlayTime
+ + Remove Clock panel (no longer works with new web version)
+
+Version 2.2.2
+ + Fix default double-click behavior
+
+Version 2.2.1
+ + Added ability to save configuration
+
+Version 2.2.0
+ + Added Clock panel to prefs
+ + Added TOC panel to prefs
+ + Fixed up internal operation of commands, all commands can now
+   have descriptive "status" associated with them
+ + reworked internal ui a bit, not terribly noticeable but makes code
+   easier
+ + use playqueue update time from API instead of educated guess to determine
+   playlist change
+
+Version 2.1.1
+ + Fix Fav display
+
+Version 2.1.0
+ + Updated to work with firmware 2.1.18
+ + Added favs list
+ + Fixed Title segmentation
+ + Added SCROLL_TAB_LAYOUT to JTabbedPanes (JDK 1.4 only)
+ + Fixed stalled status updates
+
+Version 2.0.3
+ + Added segmented list for titles
+ + Hopefully fixed JComboBox (Song selector) bug for older JDK's
+ + Increased granularity of song slider box
+ + Many internal fixes
+
+Version 2.0.2
+ + smooth out local song time handling
+ + improve song total bug handling
+ + change name of "Current Playlist" tab to "AT Play Queue"
+
+Version 2.0.1
+ + added local update of song time (1 second granularity)
+ + made NTP server quiet if can't open port
+ + fixed possible issue when song moves to next song in playqueue
+ + stricter parsing rules should not get tripped up by similar titles in songs
+
+Version 2.0.0
+ + revamped main UI (all swing)
+ + added drill-down on album/artist
+ + added mini-NTP time server
+ + drill-down is interruptible
+ + cleaned up editor playlist ui
+ + added multi-selection ability to lists in playlist editor
+ + added popup menus on popup-trigger (right click in windows)
+ + fixed pause bounce issue (hopefully other bounce issues too)
+ + added multiple playlist support
+ + preferences dialog (replaces about)
+ + added configuration option to change default behavior of double-click
+ + added configuration of AT information
+
+Version 1.4.1
+ + added new icons (represnting play state) to window
+ + added song info display on minimize
+ + fixed lots of ui issues with flickering/update etc.
+
+Version 1.4.0
+ + Added playlist editor!
+ + Fixed display bug where javatron would hang if windows turned off the monitor
+ + Interruptible playq updating
+
+Version 1.3.4
+ + Changed background of SongSlider control to match Window background
+ + Don't overwrite song info with new song info, just update it
+ 
+Version 1.3.3
+ + Added song slider to show/set song play position
+ + Added all possible states returned from apigetstatus.asp
+   for better state detection
+
+Version 1.3.2
+ + fixed small issue where playlist doesn't update if added to
+
+Version 1.3.1
+ + fixed song detection when song is last song
+
+Version 1.3
+ + parsing routines updated to use new API
+ + command, refresh and cancel algorithms more robust
+ + UI is slightly improved
+ + play button is enabled
+ + additional more detailed status is available
+ 
+Version 1.2.2
+ + internal bug fix to remove duplicate code
+
+Version 1.2.1
+ + minor UI changes (mostly internal)
+ + song display now includes genre
+
+Version 1.2
+ + added song parsing
+ + solidified AudioTron/AudioTronUI interface
+ + updates are only made when status changes 
+ + added usage info in About dialog
+
+Version 1.1
+ + added refresher thread which updates state
+ + added status bar
+ + added about dialog with licensing info
+
+Version 1.0
+ + initial minimal version

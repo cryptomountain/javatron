@@ -1,0 +1,3 @@
+
+Tell Audiotron to check for new files:
+	<ipaddress>/goform/CheckNewFilesForm/Hosts=Press%20to%20Check' &`;

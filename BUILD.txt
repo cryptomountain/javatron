@@ -1,0 +1,38 @@
+JavaTron Build Information File
+Version 1.0
+
+1.0 Introduction
+
+JavaTron's build system uses Ant.  If you do not have Ant, you will need
+to download it and install it.  You can find Ant at :
+http://jakarta.apache.org/ant/
+
+2.0 Build File
+
+JavaTron is built by from the default ant build file "build.xml".  You
+will find this file at the root of the source tree.
+
+By default, running "ant" will look for this file, and it will determine
+from the file the default target to build.  For JavaTron the default
+target is "compile".
+
+3.0 Targets
+
+JavaTron targets are described by build.xml.  They are:
+
+init: initializes the build system
+compile: compiles the source tree (/src) into the build tree (/build)
+dist-src: creates a source distributable
+dist-jar: creates an executable distributable
+dist: all distributables
+clean: cleans all temporary build files
+all: all targets except 'clean'
+
+4.0 Directory Layout
+
+/src : the source files
+/conf : configuration files
+/build : where build files go
+/dist : where dist files go
+/docs : reference docs for developers
+

@@ -1,0 +1,44 @@
+JavaTron 2.2.7
+Copyright (C) 2001-2002, Taylor Gautier
+
+ABOUT
+
+JavaTron is a Java application that controls a TurtleBeach 
+AudioTron Network MP3 player.  It provides simple buttons for
+player controls such as play, pause, stop etc., as well as
+sophisticated playlist management and display.
+
+USAGE
+
+java -jar javatron-2.2.7.jar [audiotron-ip] [username] [password]
+
+VERSION INFO
+
+This version works with TurtleBeach AudioTron Firmware 2.5.2.  It
+may not work with later revisions.  
+
+Use JavaTron 2.2.2 or less if your firmware revision is less than
+2.5.2.  
+
+NOTES
+
+: Save Settings (IP Address, Username, Password)
+You can save the AudioTron IP address, username, and password 
+from the "Prefs" screen which is located by pressing the "Prefs"
+button from the main screen.
+
+The default tab is the "Preferences:General" tab which contains
+the settings for the IP Address, username and password.  Once
+they are set, press the save button located in the lower right
+hand corner of the dialog box.  This will save a file called
+"javatron.prefs" in the JavaTron current directory.
+
+There is currently no install/uninstall program so you will
+have to remove this file yourself if you want to reset to the
+defaults or are uninstalling JavaTron.
+
+: General
+JavaTron keeps cached information about the songs your AudioTron
+has indexed.  If you need to clear this state (if you reboot the
+AudioTron and there are new files in your music share(s)) you will
+need to restart JavaTron.

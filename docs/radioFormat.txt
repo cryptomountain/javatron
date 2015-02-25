@@ -1,0 +1,91 @@
+Each time a Audiotron was rebooted, the unit would try to access the internet
+ and download a list of radio stations which were generically assigned by
+ Turtle Beach but could be modified by logging in to the TurtleRadio web site.
+ The Audiotron would call the page
+ http://duncan.turtleradio.com/output/playlist.asp?m=XXXXXXX&client=audiotron&version=3_2_25
+ where the XXXXXXX was your 7-digit member ID consisting of letters and numbers.
+
+The page returned consisted of a single line XML formatted type string which
+contained your station play list to configure the Audiotron. A typical output
+is shown below and has been formatted with spaces/tabs for clarity:
+
+<TBSTATIONS>
+	<length>71340</length>
+	<username>XXXXXXX</username>
+	<ttl>7</ttl>
+	<updateavail>false</updateavail>
+	<stationcount>339</stationcount>
+	<time>1174927288</time>
+	<station>
+                <id>2047</id>
+                <category>Adult Contemporary</category>
+                <title>Amped Out</title>
+                <location>http://www.ampedout.net/ampedOut-128k.pls</location>
+                <format>Shoutcast</format>
+                <pa>null</pa>
+        </station>
+        <station>
+                <id>9752</id>
+                <category>Adult Contemporary</category>
+                <title>Dub Beautiful Collective</title>
+                <location>http://205.188.234.37:8024/listen.pls>
+                <format>Shoutcast</format>
+                <pa>null</pa>
+        </station>
+        <station>
+		etc
+        </station>
+</TBSTATIONS>
+
+The tag names have the following functions:
+
+<length>
+
+This is the length of the entire file in bytes. Remember the output consists of a single line of data with NO spaces.
+
+<username>
+
+This is your unique TurtleRadio 7 character alphanumerical member ID.
+
+<ttl>
+
+This stands for time to live and is the number of minutes that the feed is cached if obtained by a server.
+
+<updateavail>
+
+This value is unknown but may have been used to indicate station updates on the feed.
+
+<time>
+
+This is the time of the file request in seconds since 00:00:00 1970-01-01 UTC.
+
+<station></station>
+
+This defines each station record.
+
+<category>
+
+This defines the category or music type of the radio stream. This can be anything you like for category selection.
+
+<title>
+
+This defines the title of the radio station as shown on the AudioTron display.
+
+<location>
+
+This defines the station URL address for the stream.
+
+<format>
+
+This defines the format of the radio stream and can be either "Shoutcast", "Icecast", or "Windows Media".
+
+<pa>
+
+This value is unknown but has always been set to "null".
+
+Luckily for Audiotron users, Turtle beach had the foresight to add a hidden feature
+in the last firmware release to read the station list from a local text file rather
+than using the TurtleRadio website. Although there was no intention in closing
+TurtleRadio, this information was published in August 2005 after repeated requests
+by the user base.
+

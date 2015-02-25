@@ -1,0 +1,172 @@
+
+21:03:48.856[490ms][total 490ms] Status: 302[Redirect]
+POST http://192.168.3.207/goform/webQuePlayForm Load Flags[LOAD_DOCUMENT_URI  LOAD_INITIAL_DOCUMENT_URI  ] Content Size[-1] Mime Type[text/html]
+   Request Headers:
+      Host[192.168.3.207]
+      User-Agent[Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.17) Gecko/2010010604 Ubuntu/9.04 (jaunty) Firefox/3.0.17]
+      Accept[text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+      Accept-Language[en-us,en;q=0.5]
+      Accept-Encoding[gzip,deflate]
+      Accept-Charset[ISO-8859-1,utf-8;q=0.7,*;q=0.7]
+      Keep-Alive[300]
+      Connection[keep-alive]
+      Referer[http://192.168.3.207/queue.asp]
+   Post Data:
+      entry5[5]
+      currlist[0]
+      currurl[%2Fqueue.asp%3Fentries%3D20%26index%3D0]
+      currpage[%2Fqueue.asp]
+      QueDel[Delete+From+Queue]
+   Response Headers:
+      Server[GoAhead-Webs]
+      Date[Mon Jan 15 15:54:30 1629]
+      Pragma[no-cache]
+      Cache-Control[no-cache]
+      Content-Type[text/html]
+      Location[http://192.168.3.207/queue.asp?entries=20&index=0]
+
+=================================================================================================
+
+
+21:11:11.549[602ms][total 602ms] Status: 302[Redirect]
+POST http://192.168.3.207/goform/webQuePlayForm Load Flags[LOAD_DOCUMENT_URI  LOAD_INITIAL_DOCUMENT_URI  ] Content Size[-1] Mime Type[text/html]
+   Request Headers:
+      Host[192.168.3.207]
+      User-Agent[Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.17) Gecko/2010010604 Ubuntu/9.04 (jaunty) Firefox/3.0.17]
+      Accept[text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+      Accept-Language[en-us,en;q=0.5]
+      Accept-Encoding[gzip,deflate]
+      Accept-Charset[ISO-8859-1,utf-8;q=0.7,*;q=0.7]
+      Keep-Alive[300]
+      Connection[keep-alive]
+      Referer[http://192.168.3.207/queue.asp?entries=50&index=50]
+   Post Data:
+      entry17[43]
+      currlist[0]
+      currurl[%2Fqueue.asp%3Fentries%3D50%26index%3D50]
+      currpage[%2Fqueue.asp]
+      QueDel[Delete+From+Queue]
+   Response Headers:
+      Server[GoAhead-Webs]
+      Date[Mon Jan 15 16:01:53 1629]
+      Pragma[no-cache]
+      Cache-Control[no-cache]
+      Content-Type[text/html]
+      Location[http://192.168.3.207/queue.asp?entries=50&index=50]
+
+=====================================================================================================
+Multiple entries
+
+22:14:17.001[821ms][total 821ms] Status: 302[Redirect]
+POST http://192.168.3.207/goform/webQuePlayForm Load Flags[LOAD_DOCUMENT_URI  LOAD_INITIAL_DOCUMENT_URI  ] Content Size[-1] Mime Type[text/html]
+   Request Headers:
+      Host[192.168.3.207]
+      User-Agent[Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.17) Gecko/2010010604 Ubuntu/9.04 (jaunty) Firefox/3.0.17]
+      Accept[text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+      Accept-Language[en-us,en;q=0.5]
+      Accept-Encoding[gzip,deflate]
+      Accept-Charset[ISO-8859-1,utf-8;q=0.7,*;q=0.7]
+      Keep-Alive[300]
+      Connection[keep-alive]
+      Referer[http://192.168.3.207/queue.asp?entries=50&index=50]
+   Post Data:
+      entry38[58]
+      entry39[59]
+      currlist[0]
+      currurl[%2Fqueue.asp%3Fentries%3D50%26index%3D50]
+      currpage[%2Fqueue.asp]
+      QueDel[Delete+From+Queue]
+   Response Headers:
+      Server[GoAhead-Webs]
+      Date[Wed Jan 17 17:05:27 1629]
+      Pragma[no-cache]
+      Cache-Control[no-cache]
+      Content-Type[text/html]
+      Location[http://192.168.3.207/queue.asp?entries=50&index=50]
+
+
+
+21:12:29.508[775ms][total 775ms] Status: 302[Redirect]
+POST http://192.168.3.207/goform/webQuePlayForm Load Flags[LOAD_DOCUMENT_URI  LOAD_INITIAL_DOCUMENT_URI  ] Content Size[-1] Mime Type[text/html]
+   Request Headers:
+      Host[192.168.3.207]
+      User-Agent[Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.17) Gecko/2010010604 Ubuntu/9.04 (jaunty) Firefox/3.0.17]
+      Accept[text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+      Accept-Language[en-us,en;q=0.5]
+      Accept-Encoding[gzip,deflate]
+      Accept-Charset[ISO-8859-1,utf-8;q=0.7,*;q=0.7]
+      Keep-Alive[300]
+      Connection[keep-alive]
+      Referer[http://192.168.3.207/queue.asp?entries=50&index=50]
+   Post Data:
+      entry0[32]
+      currlist[0]
+      currurl[%2Fqueue.asp%3Fentries%3D50%26index%3D50]
+      currpage[%2Fqueue.asp]
+      QueDel[Delete+From+Queue]
+   Response Headers:
+      Server[GoAhead-Webs]
+      Date[Mon Jan 15 16:03:11 1629]
+      Pragma[no-cache]
+      Cache-Control[no-cache]
+      Content-Type[text/html]
+      Location[http://192.168.3.207/queue.asp?entries=50&index=50]
+
+=========================================================================================================
+Network Authentication:
+
+POST: For 98
+action="goform/ShareForm"
+
+type=input
+name='sharepass'
+value='gibberish'
+
+type=submit
+name='sharesubmit'
+value='Save Share Password',
+
+
+POST: For XP
+action="/goform/NTForm"
+
+type=text
+name='ntuser'
+value='root'
+
+type=password
+name='ntpass'
+value='gibberish'
+
+type=submit
+name='NTSubmit'
+value='Save NT/2000/XP Settings'
+
+TamperData:
+	ntuser='root'
+	ntpass=biggiesmall
+	NTSubmit=Save+NT%2F2000%2FXP+Settings
+    Referer: http://192.168.3.207/filecfg.asp
+
+Win98 POST:
+TamperData:
+	action:"/goform/ShareForm"
+	sharepass: password
+	sharesubmit: Save+Share+Password
+
+Network connectivity POST:
+URL: /goForm/ConnectForm
+Host=192.168.3.207
+User-Agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6 ( .NET CLR 3.5.30729)
+Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language=en-us,en;q=0.5
+Accept-Encoding=gzip,deflate
+Accept-Charset=ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive=115
+Connection=keep-alive
+Referer=http://192.168.3.207/network.asp
+Authorization=Basic ////////////////
+Content-Type=application/x-www-form-urlencoded
+Content-Length=199
+POSTDATA=DHCPEnable=OFF&NETIF=Enet&ip0=192&ip1=168&ip2=30&ip3=107&mask0=255&mask1=255&mask2=255&mask3=0&gate0=192&gate1=168&gate2=30&gate3=1&dns0=192&dns1=168&dns2=30&dns3=2&connect=Save+Connectivity+Settings
+

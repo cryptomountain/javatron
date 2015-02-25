@@ -1,0 +1,48 @@
+X Need to figure out how to convert an IndexedPlayableNode into an AudioTronSong
+X Ability to perform POST commands
+X Remove a song fromt the Active Play queue
+X Retrieve song information for any single song
+X Make a playlist out of current Active Play queue
+X Save the Active Cue as an M3U playlist
+X Tell the Audiotron to "Check for New" Files
+X Get File information from File Tree and playlists
+- Install, reload a TOC file
+- Add songs to the library (api)
+X Get multiple selections working
+X Write a playlist (M3U) file from current Play queue
+X Write a playlist from a playlist tab
+- Fix playlist tab 'add-to' popups
+X Idiot-proof the "get info"s
+- polish playlist builder
+- Finish Clock functionality
+0 Network setup dialogs (network.asp)
+X Radio.txt editor
+X Message scroller editor
+- Various preferences (prefs.asp)
+0 File config settings (filecfg.asp)
+X Fix Title pane bug - (Doesn't stop asking for last title)
+- Fix second Title pane bug - (Double entry every 50'th title)
+0 More robust TV Mode
+- Volume Control
+0 Implement getInfo for 'Fav', 'Web', and 'List' tabs in Playlisteditor
+X View network history (history.asp)
+X Handle Radio.txt rescan
+- Debug / UX / Troubleshoot initial setup
+- Add a new share to the Audiotron Share list
+- Setup screens for shares (shares.asp)
+0 Import csv of radio stations into Radio Editor
+
+
+**Wish List
+- Radio verifier
+
+- Drag-N-Drop reordering of playlist
+- Message to be set by RSS Feed
+- Dimmer??
+- Trick the audiotron into rebuilding its library(empty toc...tell it to search...populate toc???)
+- Change Font size in pop-up Menus!! (why tf??? isn't this working)
+
+- - Todo
+X - Done
+0 - Inprogress
+* - backed off
